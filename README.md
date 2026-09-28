@@ -27,7 +27,18 @@ CSV 编码为 UTF-8 BOM，按 `signal` 降序排列。
 
 ![TOP30、TOP100、TOP200 累计超额净值](performance/excess_nav.png)
 
-[逐日收益与超额](performance/daily.csv) · [待结算日期](performance/pending.csv) · [000985 指数分钟均价代理](performance/index_000985_vwap_proxy.csv) · [统计摘要](performance/summary.json)
+### 逐日超额（bp）
+
+下表展示最近 10 个已结算信号日；1 bp = 0.01 个百分点。
+
+| 信号日 | 卖出日 | TOP30 | TOP100 | TOP200 |
+|---|---|---:|---:|---:|
+| 2026-09-21 | 2026-09-23 | -7.01 | -9.14 | -5.73 |
+| 2026-09-22 | 2026-09-24 | +25.36 | +62.25 | +67.07 |
+
+![TOP30、TOP100、TOP200 逐日超额](performance/daily_excess.png)
+
+[完整逐日超额序列](performance/daily_excess.csv) · [逐日收益与完整明细](performance/daily.csv) · [待结算日期](performance/pending.csv) · [000985 指数分钟均价代理](performance/index_000985_vwap_proxy.csv) · [统计摘要](performance/summary.json)
 
 **口径：** 信号日按 `rank_ex_limit_up` 选 TOP30/100/200，等权；下一交易日以个股复权 VWAP 买入，再下一交易日以复权 VWAP 卖出。VWAP 为日成交额÷成交量；只在对应 TOP200 全部有有效买卖价时计入该信号日。000985.XSHG 使用相同买卖日期的**分钟指数点位按分钟成交额加权均价**作为 VWAP 代理；指数自身不可交易，指数汇总成交额÷成交量是成分股平均价格，不是指数点位。逐日超额为组合收益减指数收益；累计超额为组合复利净值÷指数复利净值−1。以上为假设 VWAP 均可成交的税费、冲击前表现；未处理涨跌停、停牌带来的实际成交约束。仓库没有使用本地模型回测或未上传的历史信号补齐。
 <!-- PUBLIC_PERFORMANCE_END -->
