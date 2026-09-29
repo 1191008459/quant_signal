@@ -1,0 +1,17 @@
+{
+  "formula": "equal-weight TOP200 mean minus equal-weight full-market mean",
+  "industry_count": 30,
+  "industry_unit": "percentage points",
+  "latest_signal_date": "2026-09-28",
+  "signal_days": 5,
+  "signal_tree_git_oid": "22f46f65fee3b4965074e19529fccbe9e5a13b0e",
+  "source": "Git-tracked signals and same-day risk snapshots",
+  "style_columns": {
+    "SIZE": "size",
+    "btop": "book_to_price",
+    "midsize": "mid_cap",
+    "mom": "momentum",
+    "resvol": "residual_volatility"
+  },
+  "top200_daily_coverage": 200
+}

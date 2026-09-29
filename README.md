@@ -43,3 +43,31 @@ CSV 编码为 UTF-8 BOM，按 `signal` 降序排列。
 
 **口径：** 信号日按 `rank_ex_limit_up` 选 TOP30/100/200，等权；下一交易日以个股复权 VWAP 买入，再下一交易日以复权 VWAP 卖出。VWAP 为日成交额÷成交量；只在对应 TOP200 全部有有效买卖价时计入该信号日。000985.XSHG 使用相同买卖日期的**分钟指数点位按分钟成交额加权均价**作为 VWAP 代理；指数自身不可交易，指数汇总成交额÷成交量是成分股平均价格，不是指数点位。逐日超额为组合收益减指数收益；累计超额为组合复利净值÷指数复利净值−1。以上为假设 VWAP 均可成交的税费、冲击前表现；未处理涨跌停、停牌带来的实际成交约束。仓库没有使用本地模型回测或未上传的历史信号补齐。
 <!-- PUBLIC_PERFORMANCE_END -->
+
+<!-- PUBLIC_EXPOSURE_START -->
+## TOP200 风格与行业暴露
+
+只使用本仓库已发布的 `signals/YYYY-MM-DD.csv`，按剔除当日收盘涨停后的排名取 TOP200；每只股票等权。对比基准是同一信号日风险快照中全部股票的等权均值。截至 **2026-09-28** 共 **5** 个信号日，每日 TOP200 风险覆盖均为 **200/200**。
+
+风格暴露 = TOP200 风格原始值均值 − 全市场均值。SIZE、midsize、btop、mom、resvol 分别对应规模、中市值、账面市值比、动量、残差波动；各风格原始尺度不同，不直接比较数值大小。
+
+| SIZE | midsize |
+|---|---|
+| ![SIZE 暴露](exposure/style_SIZE.png) | ![midsize 暴露](exposure/style_midsize.png) |
+
+| btop | mom |
+|---|---|
+| ![btop 暴露](exposure/style_btop.png) | ![mom 暴露](exposure/style_mom.png) |
+
+![resvol 暴露](exposure/style_resvol.png)
+
+行业暴露 = TOP200 行业占比 − 全市场行业占比，单位为**百分点**。热力图展示全部 30 个行业及其逐日变化，条形图突出最新一期的偏离两端。
+
+![全部行业时序热力图](exposure/industry_heatmap.png)
+
+![最新行业偏离](exposure/industry_latest.png)
+
+[单页图表总览](exposure/index.html) · [风格逐日数据](exposure/styles_daily.csv) · [行业逐日数据](exposure/industries_daily.csv) · [覆盖核对](exposure/coverage.csv) · [来源摘要](exposure/manifest.json)
+
+当前样本期较短，图表仅描述已发布信号的风险暴露，不代表长期稳定性或未来收益。
+<!-- PUBLIC_EXPOSURE_END -->
