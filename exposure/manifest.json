@@ -2,9 +2,9 @@
   "formula": "equal-weight TOP200 mean minus equal-weight full-market mean",
   "industry_count": 30,
   "industry_unit": "percentage points",
-  "latest_signal_date": "2026-10-13",
-  "signal_days": 11,
-  "signal_tree_git_oid": "220c699fd87706ccadc3057b7514e5341f414429",
+  "latest_signal_date": "2026-10-14",
+  "signal_days": 12,
+  "signal_tree_git_oid": "1e1e831f170f7d9f7c79309953c2491709f51825",
   "source": "Git-tracked signals and same-day risk snapshots",
   "style_columns": {
     "SIZE": "size",
