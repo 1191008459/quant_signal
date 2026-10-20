@@ -1,17 +1,17 @@
 {
   "benchmark": "000985.XSHG 1-minute index levels weighted by minute turnover, T+1 to T+2 VWAP proxy",
-  "completed_signal_days": 12,
+  "completed_signal_days": 13,
   "last_cumulative_excess": {
-    "top100": 0.01911322622,
-    "top200": 0.018253634829999976,
-    "top30": 0.020854878710000024
+    "top100": -0.007777196398999986,
+    "top200": -0.006333740599000048,
+    "top30": -0.003462955046000027
   },
-  "last_sell_date": "2026-10-16",
-  "last_signal_date_completed": "2026-10-14",
+  "last_sell_date": "2026-10-19",
+  "last_signal_date_completed": "2026-10-15",
   "pending_signal_days": 2,
   "portfolio": "T+1 adjusted VWAP to T+2 adjusted VWAP, equal weight, gross, full TOP200 valid-price days only",
-  "signal_files": 14,
-  "signal_tree_git_oid": "a85e99f734627d4893247d5f026fcb713d72ac9a",
+  "signal_files": 15,
+  "signal_tree_git_oid": "a3bb45ec1e2566d10bf69c7432a20414a67a9b06",
   "source": "Git-tracked signals CSV and JSON only",
-  "stock_price_source_latest_date": "2026-10-16"
+  "stock_price_source_latest_date": "2026-10-19"
 }
