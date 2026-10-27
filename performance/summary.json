@@ -1,14 +1,14 @@
 {
   "benchmark": "000985.XSHG 1-minute index levels weighted by minute turnover, T+1 to T+2 VWAP proxy",
-  "completed_signal_days": 17,
+  "completed_signal_days": 18,
   "last_cumulative_excess": {
-    "top100": -0.028417918791999952,
-    "top200": -0.01925979473799999,
-    "top30": -0.03166861942400001
+    "top100": -0.026586934371999993,
+    "top200": -0.014277458860999959,
+    "top30": -0.03650244195300001
   },
-  "last_sell_date": "2026-10-23",
-  "last_signal_date_completed": "2026-10-21",
-  "pending_signal_days": 3,
+  "last_sell_date": "2026-10-26",
+  "last_signal_date_completed": "2026-10-22",
+  "pending_signal_days": 2,
   "portfolio": "T+1 adjusted VWAP to T+2 adjusted VWAP, equal weight, gross, full TOP200 valid-price days only",
   "signal_files": 20,
   "signal_tree_git_oid": "618846abea54ed4d7bb639e0e5838ea50d454c3e",
