@@ -1,0 +1,14 @@
+{
+  "columns": [
+    "rank_all",
+    "date",
+    "code",
+    "signal",
+    "close_limit_up",
+    "rank_ex_limit_up"
+  ],
+  "date": "2026-11-04",
+  "encoding": "UTF-8 BOM",
+  "rows": 5218,
+  "sha256": "cd42bfcdea468f64a337f0584eafdc2377b3444e8a845134eb30f461e3423eb5"
+}
