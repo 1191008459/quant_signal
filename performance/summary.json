@@ -8,10 +8,10 @@
   },
   "last_sell_date": "2026-11-13",
   "last_signal_date_completed": "2026-11-11",
-  "pending_signal_days": 1,
+  "pending_signal_days": 2,
   "portfolio": "T+1 adjusted VWAP to T+2 adjusted VWAP, equal weight, gross, full TOP200 valid-price days only",
-  "signal_files": 33,
-  "signal_tree_git_oid": "3b585ea04092fddc8dedb5f7bf63b288ec959854",
+  "signal_files": 34,
+  "signal_tree_git_oid": "d6ca1123810926c5b5efb62b7bd08024fb383c48",
   "source": "Git-tracked signals CSV and JSON only",
   "stock_price_source_latest_date": "2026-11-13"
 }
