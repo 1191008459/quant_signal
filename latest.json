@@ -7,8 +7,8 @@
     "close_limit_up",
     "rank_ex_limit_up"
   ],
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "encoding": "UTF-8 BOM",
-  "rows": 5219,
-  "sha256": "40e22df1bfaab5320b755534dcbb531e227837cad935349066da8365dbfd3416"
+  "rows": 5216,
+  "sha256": "03ca670d4d1ac06f177a3c35ed8078596bc67665cdf1a7dff2ced2a355984611"
 }
